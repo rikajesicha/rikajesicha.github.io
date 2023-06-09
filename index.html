@@ -8,9 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
-
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,31 +47,46 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/foto.jpg" alt="Rika Jesicha" width="200" class="rounded-circle img-thumbnail"/>
+      <img src="img/foto.jpg" alt="Rika Jesicha" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Rika Jesicha</h1>
-      <p class="lead">Mahasiswa di Telkom University.</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <p class="lead"></p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Jumbotron -->
 
     <!-- About -->
-    <section id="about">
-      <div class="container">
+    <section id="About">
+      <div class="container" data-aos="fade-down">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Perkenalkan Nama saya Rika Jesicha saya mahasiswa dari Telkom University jurusan Teknik Telekomuniaksi, saya seorang individu yang mempunyai passion dalam Data Analyst, Web Development . saya menghadirkan perpaduan unik antara kreativitas dan keahlian teknis untuk setiap proyek yang saya lakukan. </p>
+          <div class="col-md-4" data-aos="fade-right">
+            <p>
+              Hallo, Let Me Introduce My name is Rika Jesicha, I am a student from Telkom University majoring in Telecommunications Engineering, I am an individual who has a passion in Data Analyst, Web Development. I bring a unique blend
+              of creativity and technical expertise to every project I undertake.
+            </p>
           </div>
-          <div class="col-md-4">
-            <p>Beberapa proyek yang saya sudah kerjakan yaitu HAKI Penciptann Aplikasi Agrotech, Posture Check, proyek dalam bidang SQL dan beberapa riset yang saya sedang jalankan.</p>
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+            <p>Some of the projects I have worked on are Agrotech Application Creation Intellectual Property Rights, Posture Check, projects in the field of SQL and some research that I am currently carrying out.</p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,160L48,186.7C96,213,192,267,288,256C384,245,480,171,576,160C672,149,768,203,864,224C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,160L48,186.7C96,213,192,267,288,256C384,245,480,171,576,160C672,149,768,203,864,224C960,245,1056,235,1152,208C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir About -->
 
@@ -82,53 +100,131 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card"> 
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/pose estimation.jpeg" class="card-img-top" alt="project jerusalem" />
               <div class="card-body">
-                <p class="card-text">proyek posture tubuh menggunakan blazepose dengan computer vision. dapat mengukur kemiringan tubuh, serta gerak jasmani seperti push up,pull up dan yang lainnya.</p>
+                <p class="card-text">body posture project using blazepose with computer vision. can measure body tilt, as well as physical movements such as push ups, pull ups and others.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/HAKI AGROTECH.jpg" class="card-img-top" alt="project paris" />
               <div class="card-body">
-                <p class="card-text">Sertifikat HAKI project Aplikasi Agrotech dari Kementrian Hukum dan Hak Asasi Manusia .</p>
+                <p class="card-text">HAKI certificate for the Agrotech Application project from the Ministry of Law and Human Rights .</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/sql penjualan.jpeg" class="card-img-top" alt="project london" />
               <div class="card-body">
-                <p class="card-text">Proyek analyst menggunakan SQL tentang data hasil penjualan menggunakan query query dalam SQL.</p>
+                <p class="card-text">Analyst projects use SQL about sales data using queries in SQL.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/swissss.jpg" class="card-img-top" alt="project swissss" />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+              <img src="img/laporan akhir fix.png" class="card-img-top" alt="project swissss" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">recommender system using machine learning algorithms.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/parisss.jpg" class="card-img-top" alt="project parisss" />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+              <img src="img/RIKA-JESICHA-Huawei.png" class="card-img-top" alt="project parisss" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Independent study and internship at Huawei Tech Investment  on artificial intelligence.</p>
               </div>
             </div>
           </div>
-          
-          
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,192L48,213.3C96,235,192,277,288,250.7C384,224,480,128,576,112C672,96,768,160,864,165.3C960,171,1056,117,1152,90.7C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,192L48,213.3C96,235,192,277,288,250.7C384,224,480,128,576,112C672,96,768,160,864,165.3C960,171,1056,117,1152,90.7C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Projects -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/1.png" alt="Gambar 1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/2.png" alt="Gambar 2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/3.png" alt="Gambar 3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/4.png" alt="Gambar 4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/5.png" alt="Gambar 5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/6.png" alt="Gambar 6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/7.png" alt="Gambar 7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/8.png" alt="Gambar 8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/9.png" alt="Gambar 9" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/10.png" alt="Gambar 10" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/11.png" alt="Gambar 11" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/12.png" alt="Gambar 12" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -139,41 +235,47 @@
           </div>
         </div>
         <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <form name="jesicha-contact-form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama" /> 
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="Email"/>
-            </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">pesan</label>
-              <textarea class="form-control" id="pesan" rows="3" name="Pesan"></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button> 
+            <form name="jesicha-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="Nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="Email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="Pesan"></textarea>
+              </div>
 
-            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </form>
-        </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,122.7C672,117,768,139,864,128C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,122.7C672,117,768,139,864,128C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Contact -->
 
     <!--Footer -->
-    
+
     <footer class="bg-primary text-white text-center pb-5">
       <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rikaajes/" class="text-white fw-bold">Rika Jesicha</a></p>
     </footer>
@@ -181,32 +283,58 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzYjGh0f7Yxyw-0MPi_RR8lR3OO28bohO4it99A8oPsGGGqVbRHt6YrJRvf4oE17vRjOw/exec'
-      const form = document.forms['jesicha-contact-form']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = 1 * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Mahasiswa | Telkom University" });
+      gsap.from(".jumbotron img", { duration: 1, y: -100, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzYjGh0f7Yxyw-0MPi_RR8lR3OO28bohO4it99A8oPsGGGqVbRHt6YrJRvf4oE17vRjOw/exec";
+      const form = document.forms["jesicha-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
         // ketika tombol submit diklik
         // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            // tampilkan tombol kirim, hilangkan tombol loading 
-            btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        // tampilkan alert
-        myAlert.classList.toggle ('d-none');
-        // reset formnya
-        form.reset();
-            console.log('Success!', response)
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
